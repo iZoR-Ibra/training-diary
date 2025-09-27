@@ -3,7 +3,8 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
 
-dotenv.config();
+dotenv.config({ path: "./backend/.env" });
+console.log("MONGO_URI:", process.env.MONGO_URI);
 
 const app = express();
 
